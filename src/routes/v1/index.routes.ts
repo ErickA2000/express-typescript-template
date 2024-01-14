@@ -2,15 +2,15 @@ import { Router } from "express";
 import routes from "./routes";
 
 class IndexRoutes {
-    public router: Router = Router();
+  public router: Router = Router();
 
-    constructor(){
-        this.config();
-    }
+  constructor() {
+    this.config();
+  }
 
-    private config(): void{
-        this.router.use('/v1', routes);
-    }
+  private config(): void {
+    this.router.use("/v1", routes);
+  }
 }
 
 const indexRoutes = new IndexRoutes();
